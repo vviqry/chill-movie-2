@@ -60,6 +60,7 @@
     height: 40px;
     background: transparent;
     border: none;
+    outline: none;
     cursor: pointer;
     padding: 0;
     display: flex;
