@@ -1,11 +1,7 @@
-/* HoverCard.module.css */
-
-/* Default: Hidden on Mobile */
 .hoverCard {
   display: none;
 }
 
-/* ========== DESKTOP ONLY (min-width: 768px) ========== */
 @media (min-width: 768px) {
   .hoverCard {
     display: block;
@@ -34,7 +30,6 @@
     }
   }
 
-  /* Bagian Atas - Image */
   .imageContainer {
     width: 408px;
     height: 254px;
@@ -48,14 +43,12 @@
     object-fit: cover;
   }
 
-  /* Bagian Bawah - Info Container */
   .infoContainer {
     padding: 20px;
     display: flex;
     flex-direction: column;
   }
 
-  /* Row 1 - Action Buttons */
   .actionRow {
     display: flex;
     align-items: center;
@@ -89,16 +82,14 @@
     margin-left: auto;
   }
 
-  /* Watchlist Icon - Animasi rotasi 405° */
   .watchlistIcon {
     transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
   .watchlistIcon.rotated {
-    transform: rotate(405deg); /* 360° + 45° = bentuk × */
+    transform: rotate(405deg);
   }
 
-  /* Row 2 - Metadata */
   .metadataRow {
     display: flex;
     align-items: center;
@@ -123,7 +114,6 @@
     font-weight: 400;
   }
 
-  /* Row 3 - Genre */
   .genreRow {
     margin-top: 10px;
   }

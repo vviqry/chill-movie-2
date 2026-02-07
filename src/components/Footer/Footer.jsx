@@ -1,9 +1,7 @@
-// src/components/Footer/Footer.jsx
 import { useState } from 'react';
 import styles from './Footer.module.css';
 import ChillLogo from '../ChillLogo/ChillLogo';
 
-// Data untuk Footer
 const genreLinks = [
   "Aksi", "Anak-anak", "Anime", "Britania", "Drama", 
   "Fantasi Ilmiah & Fantasi", "Kejahatan", "KDrama", 
@@ -20,15 +18,12 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        {/* Left Section - Logo & Copyright */}
         <div className={styles.leftSection}>
           <ChillLogo size="small" />
           <p className={styles.copyright}>@2023 Chill All Rights Reserved.</p>
         </div>
 
-        {/* Right Section - Genre & Bantuan */}
         <div className={styles.rightSection}>
-          {/* Genre Section */}
           <div className={styles.linkSection}>
             <button 
               className={styles.sectionHeader}
@@ -48,7 +43,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Bantuan Section */}
           <div className={styles.linkSection}>
             <button 
               className={styles.sectionHeader}

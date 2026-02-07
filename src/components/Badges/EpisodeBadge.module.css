@@ -1,4 +1,3 @@
-/* EpisodeBadge.module.css */
 .badge {
   display: inline-flex;
   align-items: center;
@@ -14,7 +13,6 @@
   white-space: nowrap;
 }
 
-/* ========== RESPONSIVE - Mobile ========== */
 @media (max-width: 768px) {
   .badge {
     width: auto;

@@ -1,4 +1,3 @@
-// src/components/Badges/Top10Badge.jsx
 import styles from './Top10Badge.module.css';
 
 const Top10Badge = () => {

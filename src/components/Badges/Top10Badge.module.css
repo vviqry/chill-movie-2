@@ -1,4 +1,3 @@
-/* Top10Badge.module.css */
 .badge {
   display: flex;
   flex-direction: column;
@@ -31,7 +30,6 @@
   line-height: 1;
 }
 
-/* ========== RESPONSIVE - Mobile ========== */
 @media (max-width: 768px) {
   .badge {
     width: 15px;

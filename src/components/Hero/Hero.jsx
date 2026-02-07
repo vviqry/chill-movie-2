@@ -1,19 +1,15 @@
-// src/components/Hero/Hero.jsx
 import styles from './Hero.module.css';
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      {/* Background Image */}
       <div 
         className={styles.heroBackground}
         style={{ backgroundImage: `url('/hero.png')` }}
       />
       
-      {/* Overlay */}
       <div className={styles.heroOverlay} />
 
-      {/* Content */}
       <div className={styles.heroContent}>
         <h1 className={styles.title}>Duty After School</h1>
         
@@ -39,7 +35,6 @@ const Hero = () => {
 
           <span className={styles.ageBadge}>18+</span>
 
-          {/* Mute Button - dalam row actions */}
           <button className={styles.muteBtn}>
             <img src="/volume-off.png" alt="Mute" className={styles.muteIcon} />
           </button>

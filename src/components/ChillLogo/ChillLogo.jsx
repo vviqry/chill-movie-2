@@ -1,6 +1,3 @@
-// src/components/ChillLogo/ChillLogo.jsx
-// Komponen logo CHILL yang bisa dipakai ulang di Login, Register, dll
-
 import './ChillLogo.css';
 
 const ChillLogo = ({ size = 'medium' }) => {

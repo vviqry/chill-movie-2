@@ -1,14 +1,5 @@
-// src/components/Button/Button.jsx
 import styles from './Button.module.css';
 
-/**
- * Komponen Button yang reusable
- * @param {string} label - Teks tombol
- * @param {string} variant - "primary" (default) atau "google"
- * @param {ReactNode} icon - Icon (opsional, untuk Google)
- * @param {function} onClick - Handler klik
- * @param {string} type - Type button: "button" atau "submit"
- */
 const Button = ({ 
   label, 
   variant = "primary", 
@@ -16,7 +7,6 @@ const Button = ({
   onClick, 
   type = "button" 
 }) => {
-  // Gabungkan class base + variant
   const buttonClass = `${styles.btn} ${styles[variant]}`;
 
   return (

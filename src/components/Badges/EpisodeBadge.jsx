@@ -1,4 +1,3 @@
-// src/components/Badges/EpisodeBadge.jsx
 import styles from './EpisodeBadge.module.css';
 
 const EpisodeBadge = () => {

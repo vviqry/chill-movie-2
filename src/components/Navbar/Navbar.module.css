@@ -1,6 +1,3 @@
-/* ========== NAVBAR STYLES - Sesuai Figma ========== */
-
-/* Desktop: width 1440, height 94, fixed-top */
 .navbar {
   width: 100%;
   height: 94px;
@@ -12,7 +9,6 @@
   box-sizing: border-box;
 }
 
-/* Inner content wrapper */
 .navContent {
   width: 100%;
   max-width: 1440px;
@@ -25,7 +21,6 @@
   align-items: center;
 }
 
-/* Left Section - Logo & Menu */
 .leftSection {
   display: flex;
   align-items: center;
@@ -37,7 +32,6 @@
   width: auto;
 }
 
-/* Menu */
 .menu {
   display: flex;
   list-style: none;
@@ -59,7 +53,6 @@
   color: #3b82f6;
 }
 
-/* Right Section */
 .rightSection {
   position: relative;
 }
@@ -83,7 +76,6 @@
   align-items: center;
 }
 
-/* Dropdown Menu - Sesuai Figma */
 .dropdown {
   position: absolute;
   width: 180px;
@@ -121,7 +113,6 @@
   object-fit: contain;
 }
 
-/* ========== RESPONSIVE - Tablet ========== */
 @media (max-width: 1024px) {
   .navbar {
     max-width: 100%;
@@ -140,7 +131,6 @@
   }
 }
 
-/* ========== RESPONSIVE - Mobile (width 360, height 56) ========== */
 @media (max-width: 768px) {
   .navbar {
     height: 56px;
@@ -197,7 +187,6 @@
   }
 }
 
-/* ========== RESPONSIVE - Small Mobile ========== */
 @media (max-width: 480px) {
   .navbar {
     max-width: 100%;

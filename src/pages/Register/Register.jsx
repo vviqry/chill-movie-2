@@ -1,8 +1,7 @@
-// src/pages/Register/Register.jsx
 import { useState } from "react";
 import AuthLayout from "../../components/Layout/AuthLayout.jsx";
 import Button from "../../components/Button/Button.jsx";
-import "../Login/Login.css"; // Import CSS untuk password-wrapper dan eye-btn
+import "../Login/Login.css";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -14,7 +13,6 @@ const Register = () => {
       subtitle="Selamat datang!"
       backgroundImage="/layout_register.jpg"
     >
-      {/* Form Register */}
       <form className="auth-form">
         <div className="form-group">
           <label>Username</label>
@@ -58,7 +56,6 @@ const Register = () => {
           </p>
         </div>
 
-        {/* --- BUTTON GROUP --- */}
         <div className="button-group">
           <Button label="Daftar" variant="primary" type="submit" />
           <p className="atau-text">Atau</p>

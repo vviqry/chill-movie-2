@@ -14,13 +14,11 @@ const Login = () => {
       backgroundImage="/layout_login.jpg"
     >
       <form className="login-form">
-        {/* --- INPUT USERNAME --- */}
         <div className="form-group">
           <label>Username</label>
           <input type="text" placeholder="Masukkan username" />
         </div>
 
-        {/* --- INPUT PASSWORD (DENGAN MATA) --- */}
         <div className="form-group">
           <label>Kata Sandi</label>
           <div className="password-wrapper">
@@ -28,7 +26,6 @@ const Login = () => {
               type={showPassword ? "text" : "password"}
               placeholder="Masukkan kata sandi"
             />
-            {/* Icon Mata - pakai mata.png */}
             <button
               type="button"
               className="eye-btn"
@@ -39,7 +36,6 @@ const Login = () => {
           </div>
         </div>
 
-        {/* --- LINK KIRI KANAN --- */}
         <div className="links-wrapper">
           <span>
             <span style={{ color: "#a5a5a5ff" }}>Belum punya akun? </span>
@@ -48,7 +44,6 @@ const Login = () => {
           Lupa kata sandi?
         </div>
 
-        {/* --- BUTTON GROUP (Masuk, Atau, Google) --- */}
         <div className="button-group">
           <Button label="Masuk" variant="primary" type="submit" />
           <p className="atau-text">Atau</p>

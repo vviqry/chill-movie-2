@@ -1,6 +1,3 @@
-// src/data/movies.js - Data film dengan gambar spesifik
-
-// Data untuk "Melanjutkan Tonton Film" dengan urutan yang benar
 const melanjutkanTontonMovies = [
   { id: 1, title: "Don't Look Up", image: '/H_DLU.png', rating: '4.5/5' },
   { id: 2, title: 'All of Us Are Dead', image: '/H_AOUAD.png', rating: '4.6/5' },
@@ -11,7 +8,6 @@ const melanjutkanTontonMovies = [
   { id: 7, title: 'Jurassic World', image: '/H_JW.png', rating: '3.2/5' },
 ];
 
-// Data untuk "Top Rating Film dan Series Hari ini"
 const topRatingMovies = [
   { id: 101, title: 'Suzume', image: '/V_S.png', isNewEpisode: true },
   { id: 102, title: 'Jurassic World', image: '/V_JW.png' },
@@ -23,7 +19,6 @@ const topRatingMovies = [
   { id: 108, title: 'Moana', image: '/V_M.png' },
 ];
 
-// Data untuk "Film Trending" - Semua item memiliki isTop10: true
 const filmTrendingMovies = [
   { id: 201, title: 'The Tomorrow War', image: '/V_TTW.png', isTop10: true },
   { id: 202, title: 'Ant-Man', image: '/V_AM.png', isTop10: true },
@@ -35,7 +30,6 @@ const filmTrendingMovies = [
   { id: 208, title: 'Big Hero 6', image: '/V_BH6.png', isTop10: true },
 ];
 
-// Data untuk "Rilis Baru"
 const rilisBaruMovies = [
   { id: 301, title: 'La La Land', image: '/V_LM.png', isTop10: true },
   { id: 302, title: 'Duty After School', image: '/V_DAS.png', isNewEpisode: true },
@@ -47,7 +41,6 @@ const rilisBaruMovies = [
   { id: 308, title: 'Jurassic World', image: '/V_JW.png' },
 ];
 
-// Generate array untuk gambar horizontal (h) - 37 gambar
 const generateHorizontalMovies = () => {
   const movies = [];
   for (let i = 1; i <= 37; i++) {
@@ -61,7 +54,6 @@ const generateHorizontalMovies = () => {
   return movies;
 };
 
-// Generate array untuk gambar vertical (v) - 33 gambar
 const generateVerticalMovies = () => {
   const movies = [];
   for (let i = 1; i <= 33; i++) {
@@ -75,11 +67,9 @@ const generateVerticalMovies = () => {
   return movies;
 };
 
-// Export data
 export const horizontalMovies = generateHorizontalMovies();
 export const verticalMovies = generateVerticalMovies();
 
-// Kategori film untuk Home page
 export const movieCategories = {
   melanjutkanTonton: melanjutkanTontonMovies,
   topRating: topRatingMovies,

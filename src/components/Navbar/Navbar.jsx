@@ -1,4 +1,3 @@
-// src/components/Navbar/Navbar.jsx
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
@@ -9,9 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      {/* Inner content wrapper - sejajar dengan hero content */}
       <div className={styles.navContent}>
-        {/* Left Section - Logo & Menu */}
         <div className={styles.leftSection}>
           <Link to="/">
             <ChillLogo size="small" />
@@ -24,7 +21,6 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Right Section - Avatar & Dropdown */}
         <div className={styles.rightSection}>
           <div 
             className={styles.avatarContainer}
@@ -38,7 +34,6 @@ const Navbar = () => {
             </span>
           </div>
 
-          {/* Dropdown Menu */}
           {isDropdownOpen && (
             <div className={styles.dropdown}>
               <a href="#" className={styles.dropdownItem}>

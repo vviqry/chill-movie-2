@@ -1,31 +1,24 @@
-/* ===== LOGIN PAGE STYLES - Sesuai Figma ===== */
-
-/* Import Google Font - Lato */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-/* Form container */
 .login-form {
   display: flex;
   flex-direction: column;
-  gap: 37px; /* Jarak antar form-group di desktop */
+  gap: 37px;
   width: 100%;
 }
 
-/* Responsive: gap lebih kecil di mobile */
 @media (max-width: 600px) {
   .login-form {
     gap: 20px;
   }
 }
 
-/* Form Group */
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-/* Hilangkan margin default p di dalam form-group */
 .form-group p {
   margin: 0;
   font-size: 14px;
@@ -35,14 +28,13 @@
 .form-group label {
   color: #ffffff;
   font-size: 14px;
-  font-weight: 700; /* Bold sesuai Figma */
+  font-weight: 700;
 }
 
-/* Input Fields */
 .form-group input {
   width: 100%;
   padding: 14px 16px;
-  background-color: transparent; /* Transparan sesuai Figma */
+  background-color: transparent;
   border: 1px solid #3A3A3A;
   border-radius: 24px;
   color: #ffffff;
@@ -60,7 +52,6 @@
   border-color: #555;
 }
 
-/* Password Wrapper - untuk icon mata */
 .password-wrapper {
   position: relative;
   display: flex;
@@ -68,10 +59,9 @@
 }
 
 .password-wrapper input {
-  padding-right: 50px; /* Space untuk icon mata */
+  padding-right: 50px;
 }
 
-/* Eye Button */
 .eye-btn {
   position: absolute;
   right: 16px;
@@ -95,7 +85,6 @@
   opacity: 1;
 }
 
-/* Links Wrapper - Daftar & Lupa kata sandi */
 .links-wrapper {
   display: flex;
   justify-content: space-between;
@@ -108,7 +97,6 @@
   color: #ffffff;
 }
 
-/* Link "Daftar" - Bold putih */
 .link-bold {
   color: #ffffff;
   text-decoration: none;
@@ -119,7 +107,6 @@
   text-decoration: underline;
 }
 
-/* Link "Lupa kata sandi?" - Bold putih */
 .link-text {
   color: #ffffff;
   text-decoration: none;
@@ -130,15 +117,13 @@
   text-decoration: underline;
 }
 
-/* Button Group - Wrapper untuk Masuk, Atau, Google */
 .button-group {
   display: flex;
   flex-direction: column;
-  gap: 8px; /* Gap tipis seperti contoh tugas */
+  gap: 8px;
   margin-top: 20px;
 }
 
-/* Tombol Masuk */
 .btn-masuk {
   width: 100%;
   padding: 14px;
@@ -156,7 +141,6 @@
   background-color: #4A4A4A;
 }
 
-/* Text "Atau" */
 .atau-text {
   text-align: center;
   color: #888;
@@ -165,7 +149,6 @@
   padding: 0;
 }
 
-/* Tombol Google */
 .btn-google {
   width: 100%;
   padding: 14px;

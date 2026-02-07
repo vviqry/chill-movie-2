@@ -1,6 +1,3 @@
-// src/components/HoverCard/HoverCard.jsx
-// Komponen Hover Card Netflix Style untuk poster film vertikal
-
 import styles from './HoverCard.module.css';
 
 const HoverCard = ({ 
@@ -11,7 +8,6 @@ const HoverCard = ({
   isInWatchlist,
   isWatchlistRow = false
 }) => {
-  // Convert vertical image path (V_) to horizontal (H_)
   const getHorizontalImage = (imagePath) => {
     if (imagePath && imagePath.includes('/V_')) {
       return imagePath.replace('/V_', '/H_');
@@ -21,17 +17,13 @@ const HoverCard = ({
 
   const horizontalImage = getHorizontalImage(movie.image);
   
-  // Cek apakah film ini ada di watchlist
   const inWatchlist = isInWatchlist ? isInWatchlist(movie.id) : false;
 
-  // Handler untuk add/remove dari watchlist
   const handleWatchlistClick = (e) => {
-    e.stopPropagation(); // Prevent event bubbling
+    e.stopPropagation();
     if (inWatchlist || isWatchlistRow) {
-      // Jika sudah ada di watchlist atau ini row watchlist, hapus
       onRemoveFromWatchlist && onRemoveFromWatchlist(movie.id);
     } else {
-      // Jika belum ada, tambahkan
       onAddToWatchlist && onAddToWatchlist(movie);
     }
   };
@@ -41,7 +33,6 @@ const HoverCard = ({
       className={styles.hoverCard}
       onMouseLeave={onMouseLeave}
     >
-      {/* Bagian Atas - Image */}
       <div className={styles.imageContainer}>
         <img 
           src={horizontalImage} 
@@ -50,15 +41,12 @@ const HoverCard = ({
         />
       </div>
 
-      {/* Bagian Bawah - Info & Action */}
       <div className={styles.infoContainer}>
-        {/* Row 1 - Action Buttons */}
         <div className={styles.actionRow}>
           <button className={styles.actionButton} aria-label="Play">
             <img src="/play_circle.svg" alt="Play" />
           </button>
           
-          {/* Tombol Add/Remove Watchlist - Rotasi 405° saat di watchlist */}
           <button 
             className={styles.actionButton} 
             aria-label={inWatchlist || isWatchlistRow ? "Remove from List" : "Add to List"}
@@ -77,13 +65,11 @@ const HoverCard = ({
           </button>
         </div>
 
-        {/* Row 2 - Metadata */}
         <div className={styles.metadataRow}>
           <span className={styles.ratingBadge}>13+</span>
           <span className={styles.duration}>2j 33m</span>
         </div>
 
-        {/* Row 3 - Genre */}
         <div className={styles.genreRow}>
           <span className={styles.genreText}>Drama • Komedi • Romantis</span>
         </div>
