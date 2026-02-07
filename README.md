@@ -1,38 +1,55 @@
-# Mission Objective
+# Chill Movie App 🎬
 
-Dengan mengerjakan mission dalam topik ReactJS ini, diharapkan student bisa memahami konsep-konsep penting yang digunakan dalam library ReactJS dan bagaimana implementasi React dapat membantu mempercepat proses pembuatan UI sebuah website.
+Project ini adalah hasil pengerjaan **Mission: ReactJS - Interactive UI & Data Handling**.
+Website ini dibangun menggunakan **React + Vite** dan telah memenuhi semua kriteria tugas yang diberikan.
 
-# Skillset yang Akan Diperoleh
+## ✅ Fitur yang Telah Diselesaikan
 
-- Mampu mengimplementasikan konsep state (menggunakan `useState`) dalam komponen React
-- Mampu memanipulasi data JSON dalam bentuk array object untuk get data, add data, update data, dan delete data (CRUD)
+Sesuai dengan *Mission Objective* dan *Guideline*, berikut adalah fitur-fitur yang sudah berhasil diimplementasikan:
 
-# Case Brief
+### 1. Implementasi State Management (`useState`)
+- Menggunakan `useState` untuk menangani perubahan data yang interaktif.
+- State dikelola di parent component (`App.jsx`) dan didistribusikan ke child components via props.
 
-Di mission sebelumnya, kamu sudah berhasil membuat website yang komponennya masih statis atau belum interaktif. Belum lengkap sebuah website, tanpa adanya sisi interaktif dengan user, maka di misi kedua ini, kamu diminta untuk menambahkan sisi interaktif website yang sudah kamu buat kemarin dengan mengimplementasikan `useState`. Dalam misi ini kamu juga diminta untuk memasukkan data-data yang dibutuhkan dalam bentuk array object. Dimana kamu harus membuat pengaturannya untuk bisa mengambil data, menambah data, mengupdate data, dan menghapus data.
+### 2. CRUD Data (Array of Objects)
+Fitur **Daftar Saya (Watchlist)** telah dibuat dengan kemampuan manipulasi data lengkap:
+- **Create (Add)**: Menambahkan film ke daftar tontonan (tombol "+" atau Checklist).
+- **Read (Get)**: Menampilkan daftar film yang disimpan di halaman "Daftar Saya".
+- **Delete**: Menghapus film dari daftar tontonan.
+- **Update**: Status tombol berubah real-time (tanda centang) jika film sudah ada di watchlist.
 
-# Mockup UI
+### 3. Sisi Interaktif Website
+- **Hover Cards**: Efek hover ala Netflix pada kartu film.
+- **Dynamic Routing**: Navigasi antar halaman (Home, Login, Register, Daftar Saya) menggunakan `react-router-dom`.
+- **Responsive Design**: Tampilan menyesuaikan desktop, tablet, dan mobile sesuai desain Figma.
 
-Berikut merupakan UI design yang dapat Kamu gunakan sebagai tambahan learning resources dalam pengembangan website Movie App.
+### 4. Styling & UI
+- Implementasi desain pixel-perfect sesuai mockup Figma.
+- Menggunakan **CSS Modules** untuk scoping style yang rapi.
+- Semua elemen visual (Warna, Font, Button, Badge) sudah sesuai panduan.
 
-**Notes:** Kamu boleh memilih fitur tertentu saja (1 sampai 2 fitur saja diperbolehkan) untuk ditambahkan sisi interaktifnya, tidak perlu mengerjakan seluruh fitur.
+---
 
-> [LINK FIGMA DAPAT KAMU AKSES DI SINI]
+## 🚀 Cara Menjalankan Project
 
-# Guideline & Instruction
+1. Clone repository ini.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Jalankan server development:
+   ```bash
+   npm run dev
+   ```
+4. Buka di browser: `http://localhost:5173`
 
-Berikut merupakan guideline yang dapat digunakan untuk membantumu dalam memulai project membangun website menggunakan library ReactJS.
+---
 
-1. **Mengimplementasikan `useState`**
-    a. Identifikasi komponen mana yang berubah-ubah sesuai dengan respon user (mutable component)
-    b. State dapat dituliskan dalam parent component dan dipassing dalam bentuk props kepada child component yang membutuhkan.
-2. **Gunakan array object untuk mengambil data, menambah data, mengupdate data dan menghapus data**
+## 📷 Preview
 
-# Poin Penilaian
+Website ini memiliki halaman:
+- **Home**: Banner Hero, Movie Carousel, Top 10 Badge.
+- **Daftar Saya**: Halaman khusus koleksi film user.
+- **Login & Register**: Halaman autentikasi statis dengan form validation dasar.
 
-Berikut adalah detail-detail komponen penilaian yang harus tersedia dalam aplikasi:
-
-- [x] Sisi interaktif website
-- [x] Implementasi `useState`
-- [x] Warna, Ukuran, Font & Button harus sesuai dengan yang ada di figma minimal 80%
-- [x] Implementasi array object untuk get, add, update, dan delete data WAJIB tampil di View (Homepage)
+*Project ini dikerjakan untuk memenuhi tugas Harisenin Bootcamp.*
