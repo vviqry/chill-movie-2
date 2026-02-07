@@ -1,16 +1,38 @@
-# React + Vite
+# Mission Objective
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dengan mengerjakan mission dalam topik ReactJS ini, diharapkan student bisa memahami konsep-konsep penting yang digunakan dalam library ReactJS dan bagaimana implementasi React dapat membantu mempercepat proses pembuatan UI sebuah website.
 
-Currently, two official plugins are available:
+# Skillset yang Akan Diperoleh
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Mampu mengimplementasikan konsep state (menggunakan `useState`) dalam komponen React
+- Mampu memanipulasi data JSON dalam bentuk array object untuk get data, add data, update data, dan delete data (CRUD)
 
-## React Compiler
+# Case Brief
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Di mission sebelumnya, kamu sudah berhasil membuat website yang komponennya masih statis atau belum interaktif. Belum lengkap sebuah website, tanpa adanya sisi interaktif dengan user, maka di misi kedua ini, kamu diminta untuk menambahkan sisi interaktif website yang sudah kamu buat kemarin dengan mengimplementasikan `useState`. Dalam misi ini kamu juga diminta untuk memasukkan data-data yang dibutuhkan dalam bentuk array object. Dimana kamu harus membuat pengaturannya untuk bisa mengambil data, menambah data, mengupdate data, dan menghapus data.
 
-## Expanding the ESLint configuration
+# Mockup UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Berikut merupakan UI design yang dapat Kamu gunakan sebagai tambahan learning resources dalam pengembangan website Movie App.
+
+**Notes:** Kamu boleh memilih fitur tertentu saja (1 sampai 2 fitur saja diperbolehkan) untuk ditambahkan sisi interaktifnya, tidak perlu mengerjakan seluruh fitur.
+
+> [LINK FIGMA DAPAT KAMU AKSES DI SINI]
+
+# Guideline & Instruction
+
+Berikut merupakan guideline yang dapat digunakan untuk membantumu dalam memulai project membangun website menggunakan library ReactJS.
+
+1. **Mengimplementasikan `useState`**
+    a. Identifikasi komponen mana yang berubah-ubah sesuai dengan respon user (mutable component)
+    b. State dapat dituliskan dalam parent component dan dipassing dalam bentuk props kepada child component yang membutuhkan.
+2. **Gunakan array object untuk mengambil data, menambah data, mengupdate data dan menghapus data**
+
+# Poin Penilaian
+
+Berikut adalah detail-detail komponen penilaian yang harus tersedia dalam aplikasi:
+
+- [x] Sisi interaktif website
+- [x] Implementasi `useState`
+- [x] Warna, Ukuran, Font & Button harus sesuai dengan yang ada di figma minimal 80%
+- [x] Implementasi array object untuk get, add, update, dan delete data WAJIB tampil di View (Homepage)
