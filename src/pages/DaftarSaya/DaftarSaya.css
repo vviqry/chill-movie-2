@@ -1,0 +1,121 @@
+/* src/pages/DaftarSaya/DaftarSaya.css */
+/* Styling untuk halaman Daftar Saya */
+
+.daftar-saya-page {
+  min-height: 100vh;
+  background-color: #181A1C;
+  display: flex;
+  flex-direction: column;
+}
+
+.daftar-saya-main {
+  flex: 1;
+  padding: 100px 60px 40px 60px; /* Top padding untuk navbar */
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.daftar-saya-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+/* Empty State */
+.daftar-saya-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  color: #9CA3AF;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.daftar-saya-empty p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* Grid Layout - Sesuai Figma */
+.daftar-saya-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+/* Card */
+.daftar-saya-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: visible;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.daftar-saya-card:hover {
+  transform: scale(1.02);
+  z-index: 10;
+}
+
+.daftar-saya-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Badge Positions */
+.daftar-saya-episode-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 2;
+}
+
+.daftar-saya-top10-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .daftar-saya-main {
+    padding: 100px 40px 40px 40px;
+  }
+  
+  .daftar-saya-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .daftar-saya-main {
+    padding: 80px 20px 30px 20px;
+  }
+  
+  .daftar-saya-title {
+    font-size: 20px;
+  }
+  
+  .daftar-saya-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .daftar-saya-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+}

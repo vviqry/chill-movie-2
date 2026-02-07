@@ -1,0 +1,52 @@
+/* Top10Badge.module.css */
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 31px;
+  height: 48px;
+  background: rgba(183, 31, 29, 1);
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  padding: 4px;
+  box-sizing: border-box;
+  gap: 2px;
+}
+
+.top {
+  font-size: 10px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.number {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+/* ========== RESPONSIVE - Mobile ========== */
+@media (max-width: 768px) {
+  .badge {
+    width: 15px;
+    height: 22px;
+    padding: 1.91px;
+    gap: 1px;
+    border-top-right-radius: 1.91px;
+    border-bottom-left-radius: 1.91px;
+  }
+
+  .top {
+    font-size: 5px;
+  }
+
+  .number {
+    font-size: 8px;
+  }
+}

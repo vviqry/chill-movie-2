@@ -1,0 +1,57 @@
+/* src/components/ChillLogo/ChillLogo.css */
+
+/* Import Google Font - Londrina Solid */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400&display=swap');
+
+.chill-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.chill-logo__icon {
+  height: auto;
+}
+
+.chill-logo__text {
+  font-family: 'Londrina Solid', cursive;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+/* ===== SIZE VARIANTS ===== */
+
+/* Small - untuk navbar, footer */
+.chill-logo--small .chill-logo__icon {
+  width: 24px;
+}
+.chill-logo--small .chill-logo__text {
+  font-size: 24px;
+}
+
+/* Medium - default, untuk auth pages */
+.chill-logo--medium .chill-logo__icon {
+  width: 44px;
+}
+.chill-logo--medium .chill-logo__text {
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+/* Large - untuk splash screen, hero */
+.chill-logo--large .chill-logo__icon {
+  width: 64px;
+}
+.chill-logo--large .chill-logo__text {
+  font-size: 72px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  /* Hide text di mobile untuk size small (navbar) */
+  .chill-logo--small .chill-logo__text {
+    display: none;
+  }
+}

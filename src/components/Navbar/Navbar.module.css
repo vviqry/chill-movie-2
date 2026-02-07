@@ -1,0 +1,221 @@
+/* ========== NAVBAR STYLES - Sesuai Figma ========== */
+
+/* Desktop: width 1440, height 94, fixed-top */
+.navbar {
+  width: 100%;
+  height: 94px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgb(24, 26, 28);
+  box-sizing: border-box;
+}
+
+/* Inner content wrapper */
+.navContent {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 25px 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left Section - Logo & Menu */
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.logo {
+  height: 44px;
+  width: auto;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.menuLink {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.menuLink:hover {
+  color: #3b82f6;
+}
+
+/* Right Section */
+.rightSection {
+  position: relative;
+}
+
+.avatarContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dropdownArrow {
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown Menu - Sesuai Figma */
+.dropdown {
+  position: absolute;
+  width: 180px;
+  height: auto;
+  min-height: 104px;
+  top: 50px;
+  right: 0;
+  padding: 4px 0;
+  border-radius: 4px;
+  background: rgba(24, 26, 28, 1);
+  box-shadow: 
+    0px 0px 1px 0px rgba(62, 67, 74, 0.31),
+    0px 18px 28px 0px rgba(62, 67, 74, 0.15);
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdownItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdownIcon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* ========== RESPONSIVE - Tablet ========== */
+@media (max-width: 1024px) {
+  .navbar {
+    max-width: 100%;
+  }
+
+  .navContent {
+    padding: 25px 40px;
+  }
+
+  .leftSection {
+    gap: 40px;
+  }
+
+  .menu {
+    gap: 24px;
+  }
+}
+
+/* ========== RESPONSIVE - Mobile (width 360, height 56) ========== */
+@media (max-width: 768px) {
+  .navbar {
+    height: 56px;
+    max-width: 360px;
+    width: 100%;
+    top: 0;
+  }
+
+  .navContent {
+    padding: 6px 20px;
+    gap: 12px;
+  }
+
+  .leftSection {
+    gap: 12px;
+  }
+
+  .logo {
+    height: 28px;
+  }
+
+  .menu {
+    gap: 12px;
+  }
+
+  .menuLink {
+    font-size: 12px;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+  }
+
+  .dropdownArrow svg {
+    width: 10px;
+    height: 6px;
+  }
+
+  .dropdown {
+    right: -10px;
+    min-width: 140px;
+    top: 40px;
+  }
+
+  .dropdownItem {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .dropdownIcon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* ========== RESPONSIVE - Small Mobile ========== */
+@media (max-width: 480px) {
+  .navbar {
+    max-width: 100%;
+  }
+
+  .navContent {
+    padding: 6px 16px;
+  }
+
+  .leftSection {
+    gap: 8px;
+  }
+
+  .menu {
+    gap: 8px;
+  }
+
+  .menuLink {
+    font-size: 11px;
+  }
+}

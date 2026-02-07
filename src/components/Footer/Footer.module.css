@@ -1,0 +1,180 @@
+/* Footer.module.css */
+
+.footer {
+  background: rgba(24, 26, 28, 1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 60px 80px;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* Left Section */
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.logo {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+}
+
+.copyright {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* Right Section */
+.rightSection {
+  display: flex;
+  gap: 60px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+/* Link Section */
+.linkSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.chevron {
+  display: none;
+  font-size: 24px;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.chevronOpen {
+  transform: rotate(90deg);
+}
+
+/* Link List */
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.genreGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px 40px;
+}
+
+.link {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+/* ========== RESPONSIVE - Tablet ========== */
+@media (max-width: 1024px) {
+  .genreGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ========== RESPONSIVE - Mobile ========== */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .leftSection {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Override: Tampilkan teks CHILL di footer mobile */
+  .leftSection :global(.chill-logo--small .chill-logo__text) {
+    display: inline;
+  }
+
+  .rightSection {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .linkSection {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px 0;
+    gap: 0;
+  }
+
+  .sectionHeader {
+    cursor: pointer;
+  }
+
+  .chevron {
+    display: block;
+  }
+
+  /* Collapsed state */
+  .linkList {
+    display: none;
+    padding-top: 16px;
+  }
+
+  .genreGrid {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Expanded state */
+  .linkList.open {
+    display: flex;
+  }
+
+  .genreGrid.open {
+    display: grid;
+  }
+}

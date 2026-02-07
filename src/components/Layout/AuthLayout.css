@@ -1,0 +1,197 @@
+/* ========== AUTH LAYOUT STYLES ========== */
+
+/* Import Google Font - Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Container: Full screen dengan flexbox centering */
+.auth-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 125px;
+  margin-bottom: 125px;
+  
+  /* Sembunyikan scrollbar tapi tetap bisa scroll */
+  overflow: auto;
+  scrollbar-width: none;           /* Firefox */
+  -ms-overflow-style: none;        /* IE/Edge */
+}
+
+/* Chrome, Safari, Opera - sembunyikan scrollbar */
+.auth-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Background image FIXED - div terpisah */
+.auth-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2; /* Di belakang overlay */
+}
+
+/* Overlay warna di atas background - sesuai Figma */
+.auth-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15); /* Lebih tipis supaya tidak gelap */
+  z-index: -1;
+}
+
+/* Card: Kotak login/register - SESUAI FIGMA */
+.auth-card {
+  background-color: rgba(24, 26, 28, 0.84);
+  padding: 40px;
+  border-radius: 16px;
+  width: 529px;
+  box-sizing: border-box; /* Padding dihitung ke dalam width */
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+
+/* Header section - Frame 63 */
+.auth-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Sesuai Figma */
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.auth-logo {
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+  color: #ffffff;
+}
+
+/* Title "Masuk" - Lato Bold 32px */
+.auth-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0;
+  text-align: center;
+  color: #ffffff;
+  margin: 20px 0px 0px 0px;
+}
+
+/* Subtitle "Selamat datang kembali!" - Lato Regular 16px */
+.auth-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Content area */
+.auth-content {
+  width: 100%;
+}
+
+/* Form Styles */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 37px; /* Jarak antar form-group di desktop */
+}
+
+/* Responsive: gap lebih kecil di mobile */
+@media (max-width: 600px) {
+  .auth-form {
+    gap: 20px;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500; /* Medium */
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: transparent;
+  border: 1px solid rgba(231, 227, 252, 0.23); /* Border sesuai Figma */
+  border-radius: 24px;
+  color: white;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.form-group input::placeholder {
+  color: #666;
+}
+
+/* Button Styles */
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  transform: translateY(-2px);
+}
+
+/* Links */
+.auth-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.auth-links a {
+  color: #888;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.auth-links a:hover {
+  color: #3b82f6;
+}

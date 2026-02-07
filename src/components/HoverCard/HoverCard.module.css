@@ -1,0 +1,138 @@
+/* HoverCard.module.css */
+
+/* Default: Hidden on Mobile */
+.hoverCard {
+  display: none;
+}
+
+/* ========== DESKTOP ONLY (min-width: 768px) ========== */
+@media (min-width: 768px) {
+  .hoverCard {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    width: 408px;
+    height: 460px;
+    background: rgba(24, 26, 28, 1);
+    border-radius: 20px;
+    box-shadow: 0px 19.43px 48.57px 0px rgba(255, 255, 255, 0.04);
+    z-index: 999;
+    overflow: hidden;
+    animation: scaleIn 0.3s ease forwards;
+  }
+
+  @keyframes scaleIn {
+    from {
+      transform: translate(-50%, -50%) scale(0.95);
+      opacity: 0.8;
+    }
+    to {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* Bagian Atas - Image */
+  .imageContainer {
+    width: 408px;
+    height: 254px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .hoverImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Bagian Bawah - Info Container */
+  .infoContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Row 1 - Action Buttons */
+  .actionRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .actionButton {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .actionButton:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+  .actionButton img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .moreButton {
+    margin-left: auto;
+  }
+
+  /* Watchlist Icon - Animasi rotasi 405° */
+  .watchlistIcon {
+    transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .watchlistIcon.rotated {
+    transform: rotate(405deg); /* 360° + 45° = bentuk × */
+  }
+
+  /* Row 2 - Metadata */
+  .metadataRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 17px;
+  }
+
+  .ratingBadge {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .duration {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  /* Row 3 - Genre */
+  .genreRow {
+    margin-top: 10px;
+  }
+
+  .genreText {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
