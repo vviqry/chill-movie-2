@@ -1,10 +1,10 @@
 // src/pages/Home/Home.jsx
-import './home.css';
-import Navbar from '../../components/Navbar/Navbar';
-import Hero from '../../components/Hero/Hero';
-import MovieRow from '../../components/MovieRow/MovieRow';
-import Footer from '../../components/Footer/Footer';
-import { movieCategories } from '../../data/movies';
+import "./Home.css";
+import Navbar from "../../components/Navbar/Navbar";
+import Hero from "../../components/Hero/Hero";
+import MovieRow from "../../components/MovieRow/MovieRow";
+import Footer from "../../components/Footer/Footer";
+import { movieCategories } from "../../data/movies";
 
 // Menerima props watchlist dari App.jsx (parent)
 const Home = ({ addToWatchlist, removeFromWatchlist, isInWatchlist }) => {
@@ -12,12 +12,12 @@ const Home = ({ addToWatchlist, removeFromWatchlist, isInWatchlist }) => {
     <div className="home-container">
       <Navbar />
       <Hero />
-      
+
       {/* Movie Sections */}
       <main className="home-main">
         {/* Melanjutkan Tonton Film */}
-        <MovieRow 
-          title="Melanjutkan Tonton Film" 
+        <MovieRow
+          title="Melanjutkan Tonton Film"
           movies={movieCategories.melanjutkanTonton}
           onAddToWatchlist={addToWatchlist}
           onRemoveFromWatchlist={removeFromWatchlist}
@@ -25,8 +25,8 @@ const Home = ({ addToWatchlist, removeFromWatchlist, isInWatchlist }) => {
         />
 
         {/* Top Rating Film dan Series Hari ini */}
-        <MovieRow 
-          title="Top Rating Film dan Series Hari ini" 
+        <MovieRow
+          title="Top Rating Film dan Series Hari ini"
           movies={movieCategories.topRating}
           isVertical={true}
           onAddToWatchlist={addToWatchlist}
@@ -35,8 +35,8 @@ const Home = ({ addToWatchlist, removeFromWatchlist, isInWatchlist }) => {
         />
 
         {/* Film Trending */}
-        <MovieRow 
-          title="Film Trending" 
+        <MovieRow
+          title="Film Trending"
           movies={movieCategories.filmTrending}
           isVertical={true}
           onAddToWatchlist={addToWatchlist}
@@ -45,8 +45,8 @@ const Home = ({ addToWatchlist, removeFromWatchlist, isInWatchlist }) => {
         />
 
         {/* Rilis Baru */}
-        <MovieRow 
-          title="Rilis Baru" 
+        <MovieRow
+          title="Rilis Baru"
           movies={movieCategories.rilisBaru}
           isVertical={true}
           onAddToWatchlist={addToWatchlist}
@@ -62,4 +62,3 @@ const Home = ({ addToWatchlist, removeFromWatchlist, isInWatchlist }) => {
 };
 
 export default Home;
-
