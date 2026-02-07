@@ -44,10 +44,10 @@ const Navbar = () => {
                 <img src="/star.png" alt="Premium" className={styles.dropdownIcon} />
                 Ubah Premium
               </a>
-              <a href="#" className={styles.dropdownItem}>
+              <Link to="/login" className={styles.dropdownItem}>
                 <img src="/keluar.png" alt="Keluar" className={styles.dropdownIcon} />
                 Keluar
-              </a>
+              </Link>
             </div>
           )}
         </div>
